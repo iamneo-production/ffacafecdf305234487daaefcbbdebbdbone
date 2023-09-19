@@ -1,0 +1,54 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.artwork {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.artwork img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.artwork:hover {
+    transform: scale(1.1);
+}
+
+.artwork-details {
+    padding: 10px;
+}
+
+.artwork-details h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.artwork-details p {
+    font-size: 14px;
+    color: #888;
+}
